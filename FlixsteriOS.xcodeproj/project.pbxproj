@@ -16,6 +16,9 @@
 		4D7645DC27B388B600EDCA31 /* FlixsteriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7645DB27B388B600EDCA31 /* FlixsteriOSTests.swift */; };
 		4D7645E627B388B600EDCA31 /* FlixsteriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7645E527B388B600EDCA31 /* FlixsteriOSUITests.swift */; };
 		4D7645E827B388B600EDCA31 /* FlixsteriOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7645E727B388B600EDCA31 /* FlixsteriOSUITestsLaunchTests.swift */; };
+		4D7645F527B3961300EDCA31 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7645F427B3961300EDCA31 /* MovieCell.swift */; };
+		4D7645F827B39AB100EDCA31 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7645F727B39AB100EDCA31 /* Alamofire */; };
+		4D7645FB27B39F4F00EDCA31 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D7645FA27B39F4F00EDCA31 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		4D7645E127B388B600EDCA31 /* FlixsteriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixsteriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7645E527B388B600EDCA31 /* FlixsteriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixsteriOSUITests.swift; sourceTree = "<group>"; };
 		4D7645E727B388B600EDCA31 /* FlixsteriOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixsteriOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D7645F427B3961300EDCA31 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7645F827B39AB100EDCA31 /* Alamofire in Frameworks */,
+				4D7645FB27B39F4F00EDCA31 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +109,7 @@
 				4D7645C627B388B200EDCA31 /* SceneDelegate.swift */,
 				4D7645C827B388B200EDCA31 /* ViewController.swift */,
 				4D7645CA27B388B200EDCA31 /* Main.storyboard */,
+				4D7645F427B3961300EDCA31 /* MovieCell.swift */,
 				4D7645CD27B388B600EDCA31 /* Assets.xcassets */,
 				4D7645CF27B388B600EDCA31 /* LaunchScreen.storyboard */,
 				4D7645D227B388B600EDCA31 /* Info.plist */,
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = FlixsteriOS;
+			packageProductDependencies = (
+				4D7645F727B39AB100EDCA31 /* Alamofire */,
+				4D7645FA27B39F4F00EDCA31 /* AlamofireImage */,
+			);
 			productName = FlixsteriOS;
 			productReference = 4D7645C127B388B200EDCA31 /* FlixsteriOS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,10 @@
 				Base,
 			);
 			mainGroup = 4D7645B827B388B200EDCA31;
+			packageReferences = (
+				4D7645F627B39AB100EDCA31 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4D7645F927B39F4F00EDCA31 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 4D7645C227B388B200EDCA31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +275,7 @@
 			files = (
 				4D7645C927B388B200EDCA31 /* ViewController.swift in Sources */,
 				4D7645C527B388B200EDCA31 /* AppDelegate.swift in Sources */,
+				4D7645F527B3961300EDCA31 /* MovieCell.swift in Sources */,
 				4D7645C727B388B200EDCA31 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +620,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D7645F627B39AB100EDCA31 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4D7645F927B39F4F00EDCA31 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D7645F727B39AB100EDCA31 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D7645F627B39AB100EDCA31 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4D7645FA27B39F4F00EDCA31 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D7645F927B39F4F00EDCA31 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4D7645B927B388B200EDCA31 /* Project object */;
 }
